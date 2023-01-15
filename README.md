@@ -24,9 +24,9 @@ The project provides a simple interface for sending GET requests to the address 
   - 2 — WARNING
   - 3 — ERROR
  
- - add path_config in 'app/logger.py'
- - add uvicorn_addr in 'tests/tests_modules.py'
- - add uvicorn_port in 'tests/tests_modules.py'
+ - add `path_config` in `app/logger.py`
+ - add `uvicorn_addr` in `tests/tests_modules.py`
+ - add `uvicorn_port` in `tests/tests_modules.py`
  
   ## Tests
   - `tests/tests_modules.py`
