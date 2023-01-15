@@ -1,20 +1,18 @@
 [tool.poetry]
 name = "blackhubgetserver"
 version = "0.1.0"
-description = ""
+description = "https://docs.google.com/document/d/1074lx20YAXAC5yMe8FZzPMdKngWF8oB9NKQM10-Ikgc/mobilebasic"
 authors = ["Andrew Martyanov <666ytra@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
-uvicorn = "^0.20.0"
-fastapi = "^0.89.1"
-requests = "^2.28.2"
-tomli = "^2.0.1"
-beautifulsoup4 = "^4.11.1"
-requests-html = "^0.10.0"
-selenium = "^4.7.2"
-pytest = "^7.2.1"
+python = "3.10"
+uvicorn = "0.20.0"
+fastapi = "0.89.1"
+requests = "2.28.2"
+tomli = "2.0.1"
+selenium = "4.7.2"
+pytest = "7.2.1"
 
 
 [build-system]

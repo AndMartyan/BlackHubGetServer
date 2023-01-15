@@ -2,9 +2,12 @@
 import inspect
 import logging
 import os
-import config
+import get_conf
 
 folderPath = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+# input  pathConfig:
+path_config = ''
+get_conf.get_config(path_config=path_config)
 
 level_log_map = {
     '0': logging.ERROR,
@@ -13,7 +16,7 @@ level_log_map = {
     '3': logging.DEBUG
 }
 
-logging.basicConfig(filename=folderPath + '/black.log', level=level_log_map.get(config.LEVEL_LOG, logging.DEBUG),
+logging.basicConfig(filename=folderPath + '/black.log', level=level_log_map.get(get_conf.LEVEL_LOG, logging.DEBUG),
                     filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 

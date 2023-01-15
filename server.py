@@ -22,7 +22,6 @@ def get_html(url: str):
 # getting a GET request
 @app.get("/{path}", response_class=HTMLResponse)
 async def read_items(path: str):
-    path = ''
     logger.writelog('info', f"get request to {path}")
     if len(path) > 0:
         # URL formation
@@ -35,8 +34,3 @@ async def read_items(path: str):
         logger.writelog('error', f"bad request")
         return HTMLResponse(status_code=404)
 
-
-# import requests
-#
-# req = requests.get(url='<UVICORN_ADDRESS>/politica.html')
-# print(req.text)
