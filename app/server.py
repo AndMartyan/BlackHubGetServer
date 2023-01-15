@@ -4,7 +4,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 from selenium import webdriver
 import time
-import logger
+from app import logger
 
 app = FastAPI()
 

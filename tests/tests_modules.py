@@ -1,6 +1,6 @@
-import get_conf
+from app import get_conf, logger
 import requests
-import logger
+
 
 def test_config():
     assert not get_conf.get_config(

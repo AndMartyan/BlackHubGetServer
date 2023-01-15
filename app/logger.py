@@ -2,7 +2,7 @@
 import inspect
 import logging
 import os
-import get_conf
+from app import get_conf
 
 folderPath = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
 # input  pathConfig:
