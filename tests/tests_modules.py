@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 from app import get_conf, logger
 import requests
 
