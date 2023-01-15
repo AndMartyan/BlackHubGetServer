@@ -27,9 +27,8 @@ async def read_items(path: str):
     if len(path) > 0:
         # URL formation
         url = f"https://blackrussia.online/{path}"
-        page = get_html(url)
         # Replace "black russia" to "Black Hub Games"
-        page = page.replace("black russia", "Black Hub Games")
+        page = get_html(url).replace("black russia", "Black Hub Games")
         logger.writelog('error', f"good request /{path}")
         return HTMLResponse(content=page, status_code=200)
     else:
