@@ -1,0 +1,2 @@
+[logger]
+level = 0 # Уровень логирования. 3 - DEBUG, 2 - INFO, 1 - WARNING, 0 - ERROR

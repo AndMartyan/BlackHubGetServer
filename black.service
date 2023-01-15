@@ -1,0 +1,14 @@
+[Unit]
+Description=BlackHub
+After=network.target
+
+[Service]
+User=root
+WorkingDirectory=/black
+LimitNOFILE=4096
+ExecStart=/usr/bin/python3 -m uvicorn smsconv:app --host "127.0.0.1" --port 8000
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=multi-user.target
